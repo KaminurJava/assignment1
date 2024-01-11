@@ -24,9 +24,11 @@ public class Main{
 
         Shape shape = new Shape();
 
-        for (Point point : points) {
+        for (int i = 0; i < points.length; i++) {
+            Point point = points[i];
             shape.addPoint(point);
         }
+
         double perimeter = shape.calculatePerimeter();
         System.out.println("Perimeter of the shape: " + perimeter);
 
